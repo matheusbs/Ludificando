@@ -104,6 +104,10 @@
         </object-type>
         <object-type name="Trilha" sid="1274204209186733">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Xc" sid="1762407886046755" type="number" />
+                <instance-variable name="Yc" sid="1607646469146435" type="number" />
+            </instance-variables>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6294252568048935" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
