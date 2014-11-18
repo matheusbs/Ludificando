@@ -18,22 +18,21 @@
                     <param id="0" name="Variable">Dado</param>
                     <param id="1" name="Value">0</param>
                 </action>
-                <action id="4" name="Set animation" sid="8071668523324044" type="Dado">
-                    <param id="0" name="Animation">&quot;start animation&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="3" name="Start" sid="8071668523324044" type="Dado">
+                    <param id="0" name="From">1</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="4444408391366021">
             <conditions>
                 <condition id="4" name="On finished" sid="5760194004658433" type="Dado">
-                    <param id="0" name="Animation">&quot;animation finished&quot;</param>
+                    <param id="0" name="Animation">&quot;default&quot;</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="2841608809534381" type="System">
                     <param id="0" name="Variable">Dado</param>
-                    <param id="1" name="Value">int(random(6))</param>
+                    <param id="1" name="Value">random(7)</param>
                 </action>
             </actions>
         </event-block>
