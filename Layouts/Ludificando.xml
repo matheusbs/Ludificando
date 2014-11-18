@@ -4,7 +4,7 @@
     <sid>3436322648872259</sid>
     <event-sheet>Event sheet 1</event-sheet>
     <size>
-        <width>512</width>
+        <width>640</width>
         <height>512</height>
     </size>
     <margins>
@@ -82,6 +82,15 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <pa1X>0</pa1X>
+                        <pa1Y>0</pa1Y>
+                        <NextX>0</NextX>
+                        <NextY>0</NextY>
+                        <Moved>false</Moved>
+                        <InitialX>112</InitialX>
+                        <InitialY>144</InitialY>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -105,7 +114,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>2</Xc>
                         <Yc>9</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -131,7 +140,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>1</Xc>
                         <Yc>9</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -157,7 +166,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>1</Xc>
                         <Yc>8</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -183,7 +192,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>1</Xc>
                         <Yc>7</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -209,7 +218,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>2</Xc>
                         <Yc>7</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -235,7 +244,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>3</Xc>
                         <Yc>7</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -261,7 +270,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>4</Xc>
                         <Yc>7</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -287,7 +296,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>5</Xc>
                         <Yc>7</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -313,7 +322,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>6</Xc>
                         <Yc>7</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -339,7 +348,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>7</Xc>
                         <Yc>6</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -365,7 +374,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>7</Xc>
                         <Yc>5</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -391,7 +400,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>7</Xc>
                         <Yc>4</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -417,7 +426,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>7</Xc>
                         <Yc>3</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -443,7 +452,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>7</Xc>
                         <Yc>2</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -469,7 +478,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>7</Xc>
                         <Yc>1</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -495,7 +504,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>1</Xc>
+                        <Xc>8</Xc>
                         <Yc>1</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -521,7 +530,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>2</Xc>
+                        <Xc>9</Xc>
                         <Yc>1</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -547,7 +556,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>2</Xc>
+                        <Xc>9</Xc>
                         <Yc>2</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -573,7 +582,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>9</Xc>
                         <Yc>3</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -599,7 +608,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>9</Xc>
                         <Yc>4</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -625,7 +634,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>9</Xc>
                         <Yc>5</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -651,7 +660,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>9</Xc>
                         <Yc>6</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -677,7 +686,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>10</Xc>
                         <Yc>7</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -703,7 +712,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>11</Xc>
                         <Yc>7</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -729,7 +738,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>12</Xc>
                         <Yc>7</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -755,7 +764,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>13</Xc>
                         <Yc>7</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -781,7 +790,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>14</Xc>
                         <Yc>7</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -807,7 +816,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>15</Xc>
                         <Yc>7</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -833,7 +842,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>15</Xc>
                         <Yc>8</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -859,7 +868,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>15</Xc>
                         <Yc>9</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -885,7 +894,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>14</Xc>
                         <Yc>9</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -911,7 +920,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>13</Xc>
                         <Yc>9</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -937,7 +946,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>12</Xc>
                         <Yc>9</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -963,7 +972,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>11</Xc>
                         <Yc>9</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -989,7 +998,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>10</Xc>
                         <Yc>9</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1015,7 +1024,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>9</Xc>
                         <Yc>10</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1041,7 +1050,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>9</Xc>
                         <Yc>11</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1067,7 +1076,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>9</Xc>
                         <Yc>12</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1093,7 +1102,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>9</Xc>
                         <Yc>13</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1119,7 +1128,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>9</Xc>
                         <Yc>14</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1145,7 +1154,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>2</Xc>
+                        <Xc>9</Xc>
                         <Yc>15</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1171,7 +1180,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>1</Xc>
+                        <Xc>8</Xc>
                         <Yc>15</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1197,7 +1206,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>7</Xc>
                         <Yc>15</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1223,7 +1232,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>7</Xc>
                         <Yc>14</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1249,7 +1258,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>7</Xc>
                         <Yc>13</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1275,7 +1284,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>7</Xc>
                         <Yc>12</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1301,7 +1310,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>7</Xc>
                         <Yc>11</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1327,7 +1336,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>7</Xc>
                         <Yc>10</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1353,7 +1362,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>6</Xc>
                         <Yc>9</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1379,7 +1388,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>5</Xc>
                         <Yc>9</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1405,7 +1414,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>4</Xc>
                         <Yc>9</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1431,7 +1440,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>3</Xc>
                         <Yc>9</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1613,7 +1622,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>14</Xc>
                         <Yc>8</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1639,7 +1648,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>13</Xc>
                         <Yc>8</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1665,7 +1674,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>12</Xc>
                         <Yc>8</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1691,7 +1700,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>11</Xc>
                         <Yc>8</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1717,7 +1726,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>10</Xc>
                         <Yc>8</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1769,7 +1778,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>8</Xc>
                         <Yc>14</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1795,7 +1804,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>8</Xc>
                         <Yc>13</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1821,7 +1830,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>8</Xc>
                         <Yc>12</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1847,7 +1856,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>8</Xc>
                         <Yc>11</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1873,7 +1882,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>8</Xc>
                         <Yc>10</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1899,7 +1908,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>8</Xc>
                         <Yc>9</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1925,7 +1934,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>2</Xc>
                         <Yc>8</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1951,7 +1960,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>3</Xc>
                         <Yc>8</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -1977,7 +1986,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>4</Xc>
                         <Yc>8</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -2003,7 +2012,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>5</Xc>
                         <Yc>8</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -2029,7 +2038,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>6</Xc>
                         <Yc>8</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -2055,7 +2064,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>7</Xc>
                         <Yc>8</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -2081,7 +2090,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>1</Xc>
+                        <Xc>8</Xc>
                         <Yc>2</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -2107,7 +2116,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>8</Xc>
                         <Yc>3</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -2133,7 +2142,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>8</Xc>
                         <Yc>4</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -2159,7 +2168,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>8</Xc>
                         <Yc>5</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -2185,7 +2194,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>8</Xc>
                         <Yc>6</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -2211,7 +2220,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>8</Xc>
                         <Yc>7</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -2237,7 +2246,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Xc>0</Xc>
+                        <Xc>9</Xc>
                         <Yc>8</Yc>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -2245,6 +2254,37 @@
                     <world>
                         <x>288</x>
                         <y>256</y>
+                        <z>0</z>
+                        <width>29</width>
+                        <height>29</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PeaoA1" uid="86">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <pa1X>0</pa1X>
+                        <pa1Y>0</pa1Y>
+                        <NextX>0</NextX>
+                        <NextY>0</NextY>
+                        <Moved>false</Moved>
+                        <InitialX>112</InitialX>
+                        <InitialY>80</InitialY>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>112</x>
+                        <y>80</y>
                         <z>0</z>
                         <width>29</width>
                         <height>29</height>
@@ -2271,18 +2311,55 @@
             <force-own-texture>0</force-own-texture>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="Dado" uid="88">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>576</x>
+                        <y>64</y>
+                        <z>0</z>
+                        <width>30</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="rolarDado" uid="89">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>576</x>
+                        <y>64</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
     </layers>
-    <nonworld-instances>
-        <instance type="Array" uid="2">
-            <properties>
-                <width>10</width>
-                <height>1</height>
-                <depth>1</depth>
-            </properties>
-        </instance>
-    </nonworld-instances>
+    <nonworld-instances />
     <effects />
 </c2layout>
