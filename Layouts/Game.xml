@@ -33,6 +33,17 @@
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="MoveTo">
+                            <properties>
+                                <activated>Yes</activated>
+                                <max-speed>400</max-speed>
+                                <acceleration>0</acceleration>
+                                <deceleration>0</deceleration>
+                                <continued-mode>No</continued-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -96,7 +107,6 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-<<<<<<< HEAD:Layouts/Game.xml
                         <grupo>1</grupo>
                     </instance-variables>
                     <behavior-instances>
@@ -111,22 +121,6 @@
                                 <period-offset-random>0</period-offset-random>
                                 <magnitude>50</magnitude>
                                 <magnitude-random>0</magnitude-random>
-=======
-                        <NextX>0</NextX>
-                        <NextY>0</NextY>
-                        <Moved>false</Moved>
-                        <InitialX>112</InitialX>
-                        <InitialY>144</InitialY>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="MoveTo">
-                            <properties>
-                                <activated>Yes</activated>
-                                <max-speed>400</max-speed>
-                                <acceleration>0</acceleration>
-                                <deceleration>0</deceleration>
-                                <continued-mode>No</continued-mode>
->>>>>>> origin/master:Layouts/Ludificando.xml
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -269,7 +263,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD:Layouts/Game.xml
                 <instance type="Trilha" uid="4">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -296,8 +289,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-=======
->>>>>>> origin/master:Layouts/Ludificando.xml
                 <instance type="Trilha" uid="5">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -2404,23 +2395,17 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD:Layouts/Game.xml
                 <instance type="peao" uid="1">
-=======
-                <instance type="Trilha1" uid="86">
->>>>>>> origin/master:Layouts/Ludificando.xml
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>vermelhos</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-<<<<<<< HEAD:Layouts/Game.xml
                     <instance-variables>
                         <grupo>0</grupo>
                         <movido>false</movido>
                         <numero>3</numero>
-                        <selecionado>false</selecionado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -2451,7 +2436,6 @@
                         <grupo>0</grupo>
                         <movido>false</movido>
                         <numero>0</numero>
-                        <selecionado>false</selecionado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -2461,13 +2445,6 @@
                     <world>
                         <x>400</x>
                         <y>80</y>
-=======
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>32</x>
-                        <y>224</y>
->>>>>>> origin/master:Layouts/Ludificando.xml
                         <z>0</z>
                         <width>34</width>
                         <height>34</height>
@@ -2489,7 +2466,6 @@
                         <grupo>0</grupo>
                         <movido>false</movido>
                         <numero>1</numero>
-                        <selecionado>false</selecionado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -2520,7 +2496,6 @@
                         <grupo>0</grupo>
                         <movido>false</movido>
                         <numero>2</numero>
-                        <selecionado>false</selecionado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -2551,7 +2526,6 @@
                         <grupo>1</grupo>
                         <movido>false</movido>
                         <numero>0</numero>
-                        <selecionado>false</selecionado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -2582,7 +2556,6 @@
                         <grupo>1</grupo>
                         <movido>false</movido>
                         <numero>3</numero>
-                        <selecionado>false</selecionado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -2613,7 +2586,6 @@
                         <grupo>1</grupo>
                         <movido>false</movido>
                         <numero>2</numero>
-                        <selecionado>false</selecionado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -2644,7 +2616,6 @@
                         <grupo>1</grupo>
                         <movido>false</movido>
                         <numero>1</numero>
-                        <selecionado>false</selecionado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -2675,7 +2646,6 @@
                         <grupo>2</grupo>
                         <movido>false</movido>
                         <numero>0</numero>
-                        <selecionado>false</selecionado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -2706,7 +2676,6 @@
                         <grupo>2</grupo>
                         <movido>false</movido>
                         <numero>1</numero>
-                        <selecionado>false</selecionado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -2737,7 +2706,6 @@
                         <grupo>2</grupo>
                         <movido>false</movido>
                         <numero>2</numero>
-                        <selecionado>false</selecionado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -2768,7 +2736,6 @@
                         <grupo>2</grupo>
                         <movido>false</movido>
                         <numero>3</numero>
-                        <selecionado>false</selecionado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -2799,7 +2766,6 @@
                         <grupo>3</grupo>
                         <movido>false</movido>
                         <numero>1</numero>
-                        <selecionado>false</selecionado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -2830,7 +2796,6 @@
                         <grupo>3</grupo>
                         <movido>false</movido>
                         <numero>2</numero>
-                        <selecionado>false</selecionado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -2861,7 +2826,6 @@
                         <grupo>3</grupo>
                         <movido>false</movido>
                         <numero>3</numero>
-                        <selecionado>false</selecionado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -2892,7 +2856,6 @@
                         <grupo>3</grupo>
                         <movido>false</movido>
                         <numero>0</numero>
-                        <selecionado>false</selecionado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -2914,31 +2877,16 @@
                 </instance>
                 <instance type="ghostPeao" uid="125">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Sine">
-                            <properties>
-                                <active-on-start>Yes</active-on-start>
-                                <movement>Opacity</movement>
-                                <wave>Sine</wave>
-                                <period>2</period>
-                                <period-random>0</period-random>
-                                <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>576</x>
-                        <y>-64</y>
+                        <x>32</x>
+                        <y>256</y>
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -2946,7 +2894,7 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>0.300000012</opacity>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>
@@ -3436,32 +3384,6 @@
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Trilha" uid="4">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Xc>1</Xc>
-                        <Yc>9</Yc>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>32</x>
-                        <y>224</y>
-                        <z>0</z>
-                        <width>29</width>
-                        <height>29</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

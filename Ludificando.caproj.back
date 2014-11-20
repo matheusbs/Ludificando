@@ -50,13 +50,31 @@
     <object-folder>
         <object-type name="Background" sid="6230806910587382">
             <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+<<<<<<< HEAD
+=======
+        <object-type name="PeaoA1" sid="910799668241869">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="NextX" sid="8621566844937263" type="number" />
+                <instance-variable name="NextY" sid="1520282991323892" type="number" />
+                <instance-variable name="Moved" sid="2060557635445389" type="boolean" />
+                <instance-variable name="InitialX" sid="1394249297194174" type="number" />
+                <instance-variable name="InitialY" sid="8050551037066508" type="number" />
+            </instance-variables>
             <behaviors>
-                <behavior-type name="MoveTo" sid="4850605350084534">
+                <behavior-type name="MoveTo" sid="4005746510091213">
                     <behavior id="Rex_MoveTo" />
                 </behavior-type>
             </behaviors>
-            <texture />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7455078654665165" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
+>>>>>>> origin/master
         <object-type name="Trilha" sid="1274204209186733">
             <plugin id="Sprite" />
             <instance-variables>
@@ -155,6 +173,7 @@
                 </animation>
             </animation-folder>
         </object-type>
+<<<<<<< HEAD
         <object-type name="Mouse" sid="4647703166667782">
             <plugin id="Mouse" />
         </object-type>
@@ -164,6 +183,7 @@
                 <instance-variable name="grupo" sid="2659981947420144" type="number" />
                 <instance-variable name="movido" sid="7243947179720895" type="boolean" />
                 <instance-variable name="numero" sid="3779623354356874" type="number" />
+                <instance-variable name="selecionado" sid="2092744429623925" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Pin" sid="5069927025674638">
@@ -227,10 +247,17 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="204045690166982" speed="0">
+=======
+        <object-type name="Trilha1" sid="9165858023799169">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3508173704904243" speed="5">
+>>>>>>> origin/master
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
+<<<<<<< HEAD
         <object-type name="Sprite" sid="1859724493523245">
             <plugin id="Sprite" />
             <instance-variables>
@@ -246,12 +273,19 @@
         </object-type>
         <object-type name="ghostPeao" sid="9254568350615452">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="317840873573215">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2215439363780059" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\000.png" />
                 </animation>
             </animation-folder>
         </object-type>
+=======
+>>>>>>> origin/master
     </object-folder>
     <families />
     <layout-folder>
