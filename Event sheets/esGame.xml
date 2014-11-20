@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>esGame</name>
+    <events>
+        <variable constant="0" name="numJogadas" sid="6597277575948681" static="0" type="number">3</variable>
+        <variable constant="0" name="peaoNumero" sid="6301079073905188" static="0" type="number">0</variable>
+        <variable constant="0" name="PlayerTurn" sid="6989741200706148" static="0" type="number">0</variable>
+        <variable constant="0" name="Dado" sid="2727694538219718" static="0" type="number">0</variable>
+        <event-block sid="7555460283728226">
+            <conditions>
+                <condition id="0" name="On function" sid="6727798995591305" type="Function">
+                    <param id="0" name="Name">&quot;CreateGhost&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <variable constant="0" name="CellY" sid="3664693135184465" static="0" type="number">0</variable>
+                <variable constant="0" name="CellX" sid="2484782096612338" static="0" type="number">0</variable>
+                <event-block sid="444575295667405">
+                    <conditions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="5070676619918768" type="System">
+                            <param id="0" name="Variable">CellX</param>
+                            <param id="1" name="Value">Function.Param(0)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7416991531077867" type="System">
+                            <param id="0" name="Variable">CellY</param>
+                            <param id="1" name="Value">Function.Param(1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7696673504078713">
+                    <conditions>
+                        <condition id="-19" name="Pick all" sid="9393915704575993" type="System">
+                            <param id="0" name="Object">ghostPeao</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="5949237874818244" type="ghostPeao" />
+                    </actions>
+                </event-block>
+                <event-block sid="4109607101277609">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="8389372963966576" type="System">
+                            <param id="0" name="First value">Dado.AnimationFrame</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="2049551670266254">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="5504904113452469" type="System">
+                                    <param id="0" name="Object">peao</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="6215437282336229" type="peao">
+                                    <param id="0" name="Instance variable">selecionado</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="4282272814793923" type="peao">
+                                    <param id="0" name="Instance variable">movido</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="1076137321699578" type="System">
+                                    <param id="0" name="Object to create">ghostPeao</param>
+                                    <param id="1" name="Layer">&quot;Transitions&quot;</param>
+                                    <param id="2" name="X">288</param>
+                                    <param id="3" name="Y">32</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Checa celulas validas</comment>
+        <event-block sid="8904870694533323">
+            <conditions>
+                <condition id="0" name="On function" sid="1373318083141359" type="Function">
+                    <param id="0" name="Name">&quot;CheckMove&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <variable constant="0" name="CellY" sid="7193393046027696" static="0" type="number">0</variable>
+                <variable constant="0" name="CellX" sid="5490543503928649" static="0" type="number">0</variable>
+                <event-block sid="7809449507925855">
+                    <conditions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="5812912873626455" type="System">
+                            <param id="0" name="Variable">CellX</param>
+                            <param id="1" name="Value">Function.Param(0)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2140394368062588" type="System">
+                            <param id="0" name="Variable">CellY</param>
+                            <param id="1" name="Value">Function.Param(1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment></comment>
+                <event-block sid="2269259779374007">
+                    <conditions>
+                        <condition id="-10" name="For" sid="5154733564333623" type="System">
+                            <param id="0" name="Name">&quot;Y&quot;</param>
+                            <param id="1" name="Start index">1</param>
+                            <param id="2" name="End index">15</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="4124586435562671">
+                            <conditions>
+                                <condition id="-10" name="For" sid="2926781755291046" type="System">
+                                    <param id="0" name="Name">&quot;X&quot;</param>
+                                    <param id="1" name="Start index">1</param>
+                                    <param id="2" name="End index">15</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <comment>contorno</comment>
+                                <event-block sid="1634209459975389">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="7703397160704242" type="System">
+                                            <param id="0" name="First value">CellX + loopindex(&quot;X&quot;)</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                </event-block>
+                                <event-block sid="6461835128517771">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="6201513883514068" type="System">
+                                            <param id="0" name="First value">CellY+ loopindex(&quot;Y&quot;)</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                </event-block>
+                                <event-block sid="2666293900281756">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="7459965861649355" type="System">
+                                            <param id="0" name="First value">CellX + loopindex(&quot;X&quot;)</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Second value">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                </event-block>
+                                <event-block sid="464107996392585">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="2024605990278328" type="System">
+                                            <param id="0" name="First value">CellY+ loopindex(&quot;Y&quot;)</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Second value">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="7064327614624511">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="6504204364613144" type="Trilha">
+                                                    <param id="0" name="Instance variable">Xc</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">CellX +loopindex(&quot;X&quot;)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                        </event-block>
+                                        <event-block sid="3196364429588537">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="8831135474154162" type="Trilha">
+                                                    <param id="0" name="Instance variable">Yc</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">CellY +loopindex(&quot;Y&quot;)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8058707762143751">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1644311431158691" type="Touch">
+                    <param id="0" name="Object">rolarDado</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Set speed" sid="1593409304227119" type="Dado">
+                    <param id="0" name="Speed">10</param>
+                </action>
+                <action id="-9" name="Set value" sid="7537916440313703" type="System">
+                    <param id="0" name="Variable">Dado</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="3" name="Start" sid="8071668523324044" type="Dado">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="5016859599506962">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4083222334921856" type="System">
+                            <param id="0" name="Variable">numJogadas</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="1895952028865169" type="System">
+                            <param id="0" name="Variable">numJogadas</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="6253980447778394">
+                            <conditions />
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="3950042791552229">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="1973784564369117" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3522574234729961" type="System">
+                            <param id="0" name="Variable">numJogadas</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="1484823981815149">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="8776959753160155" type="System">
+                                    <param id="0" name="Variable">PlayerTurn</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="7016221333366979" type="System">
+                                    <param id="0" name="Variable">PlayerTurn</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6864251402000934">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="6889618779451599" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="3260151999331054" type="System">
+                                    <param id="0" name="Variable">PlayerTurn</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5777087985684582">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4444408391366021">
+            <conditions>
+                <condition id="4" name="On finished" sid="5760194004658433" type="Dado">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2841608809534381" type="System">
+                    <param id="0" name="Variable">Dado</param>
+                    <param id="1" name="Value">random(7)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1362888386130572">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5504430991228942" type="System">
+                    <param id="0" name="Variable">Dado</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9321735605968145" type="System">
+                    <param id="0" name="Variable">Dado</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="2752136335144965" type="Dado">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1994834323218146">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3348681477144826" type="System">
+                    <param id="0" name="Variable">Dado</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3991092215940798" type="System">
+                    <param id="0" name="Variable">Dado</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="7170728511821901" type="Dado">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4299407832573814">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9794687781777161" type="System">
+                    <param id="0" name="Variable">Dado</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2762903511772984" type="System">
+                    <param id="0" name="Variable">Dado</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="8797042205731425" type="Dado">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9235059620877143">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4610849654942865" type="System">
+                    <param id="0" name="Variable">Dado</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1974164063366192" type="System">
+                    <param id="0" name="Variable">Dado</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="5653618649131641" type="Dado">
+                    <param id="0" name="Frame number">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2914393995208012">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6337571460074035" type="System">
+                    <param id="0" name="Variable">Dado</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6511644404153968" type="System">
+                    <param id="0" name="Variable">Dado</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="3937964439098763" type="Dado">
+                    <param id="0" name="Frame number">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8888284250340145">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6215163230712491" type="System">
+                    <param id="0" name="Variable">Dado</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6565894120329029" type="System">
+                    <param id="0" name="Variable">Dado</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="8654101391877972" type="Dado">
+                    <param id="0" name="Frame number">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3774548819470579">
+            <conditions>
+                <condition id="3" name="On touched object" sid="4539205273465892" type="Touch">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5629276093823785">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="7355092157290501" type="System">
+                            <param id="0" name="Object">peao</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="5316993110710312">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="6498823312623444" type="System">
+                                    <param id="0" name="First value">peao.numero</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">Sprite.num</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="2584759320346163" type="System">
+                                    <param id="0" name="First value">peao.grupo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">Sprite.grup</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="3389038966157616" type="System">
+                                    <param id="0" name="First value">PlayerTurn</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">peao.grupo</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="9892793320995755" type="peao">
+                                    <param id="0" name="Speed">5</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="922546406803058" type="peao">
+                                    <param id="0" name="Animation">Sprite.grupo</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="3" name="Start" sid="7763333257244552" type="peao">
+                                    <param id="0" name="From">1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="3789249593234927" type="peao">
+                                    <param id="0" name="Instance variable">selecionado</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="6759748241424624">
+                                    <conditions />
+                                    <actions>
+                                        <action id="0" name="Call function" sid="5640981677080649" type="Function">
+                                            <param id="0" name="Name">&quot;CreateGhost&quot;</param>
+                                            <param id="1" name="Parameter {n}">Sprite.num{###}Sprite.grup</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="9791461176829064">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="6386944572891209" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="3766941593625275" type="peao">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="2" name="Stop" sid="6152215509757462" type="peao" />
+                                <action id="5" name="Set frame" sid="6609329521553068" type="peao">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="4649522203803686" type="peao">
+                                    <param id="0" name="Instance variable">selecionado</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment></comment>
+        <event-block sid="407843102901898">
+            <conditions>
+                <condition id="-24" name="For Each (ordered)" sid="4251944891917645" type="System">
+                    <param id="0" name="Object">shadow</param>
+                    <param id="1" name="Expression">0</param>
+                    <param id="2" name="Order">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4280245413361416">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="7929749363664014" type="System">
+                            <param id="0" name="Variable">PlayerTurn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">shadow.grupo</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="0" name="Set active" sid="9256978161328399" type="shadow">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9679451736660217">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="2904890664107002" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="5" name="Set cycle position" sid="3723398554170539" type="shadow">
+                            <param id="0" name="Cycle position">0</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="7923655801276724" type="shadow">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -8,15 +8,18 @@
     <author-website>http://matheusbs.github.io/Ludificando/</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>jsizd4hr07kv</unique-id>
-    <saved-with-version>17400</saved-with-version>
+    <saved-with-version>18400</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Rex.Rainbow" id="Rex_MoveTo" version="1">MoveTo</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -24,11 +27,11 @@
     </configurations>
     <window-size>
         <width>854</width>
-        <height>480</height>
+        <height>512</height>
     </window-size>
     <pixel-rounding>1</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>Ludificando</first-layout>
+    <first-layout>Game</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -44,7 +47,7 @@
         <prop name="Sampling">Point</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder expanded="1">
+    <object-folder>
         <object-type name="Background" sid="6230806910587382">
             <plugin id="TiledBg" />
             <behaviors>
@@ -54,39 +57,14 @@
             </behaviors>
             <texture />
         </object-type>
-        <object-type name="PeaoA1" sid="910799668241869">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="pa1X" sid="1791268569812052" type="number" />
-                <instance-variable name="pa1Y" sid="8126397224765733" type="number" />
-                <instance-variable name="NextX" sid="8621566844937263" type="number" />
-                <instance-variable name="NextY" sid="1520282991323892" type="number" />
-                <instance-variable name="Moved" sid="2060557635445389" type="boolean" />
-                <instance-variable name="InitialX" sid="1394249297194174" type="number" />
-                <instance-variable name="InitialY" sid="1425449442525837" type="number" />
-            </instance-variables>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7455078654665165" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Trilha" sid="1274204209186733">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="Xc" sid="1762407886046755" type="number" />
                 <instance-variable name="Yc" sid="1607646469146435" type="number" />
             </instance-variables>
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6294252568048935" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Celula2" sid="1784098930946233">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9907085332066524" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -97,27 +75,19 @@
         <object-type name="Function" sid="9383663332903985">
             <plugin id="Function" />
         </object-type>
-        <object-type name="Sprite" sid="9025204376246427">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2595832800910311" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Dado" sid="61415674959044">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="2" repeatto="0" sid="8995752559897144" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.5" />
-                            <point x="0.966667" y="0.966667" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0333333" y="0.966667" />
-                            <point x="0" y="0.5" />
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.0625" y="0.9375" />
+                            <point x="0.03125" y="0.5" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
@@ -179,19 +149,122 @@
         </object-type>
         <object-type name="rolarDado" sid="5025804532637301">
             <plugin id="Sprite" />
-            <animation-folder expanded="1">
+            <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2752026283511595" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Mouse" sid="4647703166667782">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="peao" sid="2078553817763592">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="grupo" sid="2659981947420144" type="number" />
+                <instance-variable name="movido" sid="7243947179720895" type="boolean" />
+                <instance-variable name="numero" sid="3779623354356874" type="number" />
+                <instance-variable name="selecionado" sid="2092744429623925" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="5069927025674638">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="16" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9246171243458838" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="1" name="vermelhos" pingpong="0" repeatcount="1" repeatto="0" sid="2919414479926897" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\000.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="verdes" pingpong="0" repeatcount="1" repeatto="0" sid="7169783693510283" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\007.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="amarelos" pingpong="0" repeatcount="1" repeatto="0" sid="8184127703735473" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\011.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="azuis" pingpong="0" repeatcount="1" repeatto="0" sid="7797783734220628" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\015.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="shadow" sid="8737809155833111">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="grupo" sid="7884080452128438" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Sine" sid="357092613460251">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="204045690166982" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="1859724493523245">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="num" sid="4747554663400341" type="number" />
+                <instance-variable name="grup" sid="2478080951215513" type="number" />
+                <instance-variable name="grupo" sid="6117006146432291" type="string" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9861250197749909" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ghostPeao" sid="9254568350615452">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="317840873573215">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2215439363780059" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\000.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
-    <layout-folder expanded="1">
-        <layout>Ludificando.xml</layout>
+    <layout-folder>
+        <layout>Game.xml</layout>
     </layout-folder>
-    <event-folder expanded="1">
-        <event-sheet>Event sheet 1.xml</event-sheet>
+    <event-folder>
+        <event-sheet>esGame.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="87">
@@ -200,11 +273,12 @@
             </properties>
         </global-instance>
         <global-instance type="Function" uid="2" />
+        <global-instance type="Mouse" uid="91" />
     </global-instances>
-    <sounds-folder expanded="1" />
-    <music-folder expanded="1" />
-    <files-folder expanded="1">
-        <file-folder expanded="0" name="Icons">
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
             <file name="icon-16.png" />
             <file name="icon-32.png" />
             <file name="icon-114.png" />
