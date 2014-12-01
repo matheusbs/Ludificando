@@ -214,120 +214,125 @@
                     <param id="1" name="Value">random(7)</param>
                 </action>
             </actions>
-        </event-block>
-        <event-block sid="1362888386130572">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="5504430991228942" type="System">
-                    <param id="0" name="Variable">Dado</param>
-                    <param id="1" name="Comparison">2</param>
-                    <param id="2" name="Value">2</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="9321735605968145" type="System">
-                    <param id="0" name="Variable">Dado</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="2752136335144965" type="Dado">
-                    <param id="0" name="Frame number">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="1994834323218146">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="3348681477144826" type="System">
-                    <param id="0" name="Variable">Dado</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="3991092215940798" type="System">
-                    <param id="0" name="Variable">Dado</param>
-                    <param id="1" name="Comparison">2</param>
-                    <param id="2" name="Value">3</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="7170728511821901" type="Dado">
-                    <param id="0" name="Frame number">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="4299407832573814">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="9794687781777161" type="System">
-                    <param id="0" name="Variable">Dado</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">2</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="2762903511772984" type="System">
-                    <param id="0" name="Variable">Dado</param>
-                    <param id="1" name="Comparison">2</param>
-                    <param id="2" name="Value">4</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="8797042205731425" type="Dado">
-                    <param id="0" name="Frame number">2</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="9235059620877143">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="4610849654942865" type="System">
-                    <param id="0" name="Variable">Dado</param>
-                    <param id="1" name="Comparison">2</param>
-                    <param id="2" name="Value">5</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="1974164063366192" type="System">
-                    <param id="0" name="Variable">Dado</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">3</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="5653618649131641" type="Dado">
-                    <param id="0" name="Frame number">3</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="2914393995208012">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="6337571460074035" type="System">
-                    <param id="0" name="Variable">Dado</param>
-                    <param id="1" name="Comparison">2</param>
-                    <param id="2" name="Value">6</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="6511644404153968" type="System">
-                    <param id="0" name="Variable">Dado</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">4</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="3937964439098763" type="Dado">
-                    <param id="0" name="Frame number">4</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8888284250340145">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="6215163230712491" type="System">
-                    <param id="0" name="Variable">Dado</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">5</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="6565894120329029" type="System">
-                    <param id="0" name="Variable">Dado</param>
-                    <param id="1" name="Comparison">2</param>
-                    <param id="2" name="Value">7</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="8654101391877972" type="Dado">
-                    <param id="0" name="Frame number">5</param>
-                </action>
-            </actions>
+            <sub-events>
+                <event-block sid="1362888386130572">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5504430991228942" type="System">
+                            <param id="0" name="Variable">Dado</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="9321735605968145" type="System">
+                            <param id="0" name="Variable">Dado</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="2752136335144965" type="Dado">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action behavior="MoveTo" id="6" name="Move to object" sid="8129430626176409" type="peao">
+                            <param id="0" name="Target">Trilha</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1994834323218146">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3348681477144826" type="System">
+                            <param id="0" name="Variable">Dado</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="3991092215940798" type="System">
+                            <param id="0" name="Variable">Dado</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="7170728511821901" type="Dado">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4299407832573814">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="9794687781777161" type="System">
+                            <param id="0" name="Variable">Dado</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="2762903511772984" type="System">
+                            <param id="0" name="Variable">Dado</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="8797042205731425" type="Dado">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9235059620877143">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4610849654942865" type="System">
+                            <param id="0" name="Variable">Dado</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="1974164063366192" type="System">
+                            <param id="0" name="Variable">Dado</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="5653618649131641" type="Dado">
+                            <param id="0" name="Frame number">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2914393995208012">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6337571460074035" type="System">
+                            <param id="0" name="Variable">Dado</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="6511644404153968" type="System">
+                            <param id="0" name="Variable">Dado</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="3937964439098763" type="Dado">
+                            <param id="0" name="Frame number">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8888284250340145">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6215163230712491" type="System">
+                            <param id="0" name="Variable">Dado</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="6565894120329029" type="System">
+                            <param id="0" name="Variable">Dado</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="8654101391877972" type="Dado">
+                            <param id="0" name="Frame number">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="3774548819470579">
             <conditions>

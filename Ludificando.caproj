@@ -8,7 +8,7 @@
     <author-website>http://matheusbs.github.io/Ludificando/</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>jsizd4hr07kv</unique-id>
-    <saved-with-version>18400</saved-with-version>
+    <saved-with-version>19000</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
@@ -17,7 +17,6 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Rex.Rainbow" id="Rex_MoveTo" version="1">MoveTo</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
     </used-behaviors>
@@ -166,8 +165,8 @@
                 <instance-variable name="numero" sid="3779623354356874" type="number" />
             </instance-variables>
             <behaviors>
-                <behavior-type name="Pin" sid="5069927025674638">
-                    <behavior id="Pin" />
+                <behavior-type name="MoveTo" sid="1079386741062901">
+                    <behavior id="Rex_MoveTo" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -238,17 +237,14 @@
                 <instance-variable name="grup" sid="2478080951215513" type="number" />
                 <instance-variable name="grupo" sid="6117006146432291" type="string" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="MoveTo" sid="6821616558691641">
+                    <behavior id="Rex_MoveTo" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9861250197749909" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="ghostPeao" sid="9254568350615452">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2215439363780059" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jamesli\Documents\GitHub\Ludificando\Animations\peao\Default\000.png" />
                 </animation>
             </animation-folder>
         </object-type>
